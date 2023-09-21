@@ -1,0 +1,18 @@
+#
+# ~/.bashrc
+#
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+export EDITOR="nvim"
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+alias ls='ls --color=auto'
+alias ll='ls -l --color=auto'
+alias lt='ls -lth --color=auto'
+alias grep='grep --color=auto'
+alias hx='helix'
+alias vim='nvim'
+alias dots='chezmoi'
+PS1='[\u@\h \W]\$ '
+
+# set user path 
+export PATH=$PATH:/home/rwillox/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin
