@@ -19,18 +19,19 @@
 	"temperature", 
 	"memory",
 	//"disk", 
-	"custom/weather",
+    //"custom/weather",
 	],
   
 "modules-center": [
 	"custom/menu", 
-	"clock",
+    "hyprland/window", 
 	//"custom/cycle_wall",	
 	"custom/lock",	
 	], 
 
 "modules-right": [
-	//"hyprland/window", 
+	"custom/weather",
+	"clock",
 	"tray", 
 	"battery", 
 	"backlight",
