@@ -29,7 +29,6 @@ return {
 				"cssls",
 				"tailwindcss",
 				"svelte",
-				"lua_ls",
 				"graphql",
 				"emmet_ls",
 				"prismals",

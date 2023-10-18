@@ -10,6 +10,7 @@ return {
 		"onsails/lspkind.nvim", -- vs-code like pictograms
 		"hrsh7th/cmp-nvim-lua",
 	},
+
 	config = function()
 		local cmp = require("cmp")
 
