@@ -8,7 +8,7 @@ return {
 	config = function()
 		-- import lspconfig plugin
 		local lspconfig = require("lspconfig")
-
+		local util = require("lspconfig/util")
 		-- import cmp-nvim-lsp plugin
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
@@ -137,11 +137,18 @@ return {
 			on_attach = on_attach,
 		})
 
-		-- Configure rust server
+		--[[ -- Configure rust server
 		lspconfig["rust_analyzer"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
-		})
+			filetypes = { "rust" },
+			root_dir = util.root_pattern("Cargo.toml"),
+			settings = {
+				cargo = {
+					allfeatures = true,
+				},
+			},
+		}) ]]
 
 		-- Configure C server
 		lspconfig["clangd"].setup({
