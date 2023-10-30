@@ -1,0 +1,94 @@
+{
+    "workbench.startupEditor": "none",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "Everforest Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.lineNumbers": "relative",
+    "workbench.productIconTheme": "material-product-icons",
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font','FiraCode Nerd Font'",
+    "zenMode.hideLineNumbers": false,
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports":true,
+      "source.organizeImports": true,
+      "source.removeUnused": true
+    },
+    
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+    "editor.formatOnSave": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorSurroundingLines":5,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.stickyScroll.enabled": true,
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "extensions.ignoreRecommendations": true,
+    "editor.linkedEditing": true,
+    "editor.suggest.insertMode": "replace",
+    "window.zoomLevel": 1,
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "projectManager.git.baseFolders": ["~/Documents/projects"],
+    "projectManager.sortList": "Recent",
+    "workbench.settings.editor": "json",
+    "vim.leader": "<space>",
+    "vim.foldfix": true,
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(230,97, 89, 0.7)",
+    "vim.highlightedyank.textColor": "white",
+    "vim.normalModeKeyBindingsNonRecursive":[
+     {
+        "before":["leader","w"],
+        "commands":[":w!"]
+     },
+     {
+        "before":["leader","q"],
+        "commands":[":q!"]
+     },
+     {
+        "before":["leader","x"],
+        "commands":[":x!"]
+     },
+     {
+        "before":["<c-a>"],
+        "after":["g","g","V","G"]
+     },
+     {
+        "before":["leader", "k"],
+        "commands":["editor.action.showHover"]
+     }, 
+     {
+        "before":["]", "d"],
+        "commands":["editor.action.mark.next"]
+     }, 
+     {
+        "before":["[", "d"],
+        "commands":["editor.action.mark.previous"]
+     }, 
+     {
+        "before":["leader", "c","a"],
+        "commands":["editor.action.quickfix"]
+     } 
+    ],
+    "vim.insertModeKeyBindings": [
+     {
+    "before": ["j", "k"],
+    "after": ["<Esc>"]
+   }
+   ],
+   "sortJSON.orderOverride": ["name", "version", "description"],
+   "sortJSON.orderUnderride": ["dependencies", "devDependencies"]
+}
