@@ -36,7 +36,7 @@
     "editor.linkedEditing": true,
     "editor.suggest.insertMode": "replace",
     "window.zoomLevel": 1,
-    "editor.fontSize": 14,
+    "editor.fontSize": 12,
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
     "projectManager.git.baseFolders": ["~/Documents/projects"],
