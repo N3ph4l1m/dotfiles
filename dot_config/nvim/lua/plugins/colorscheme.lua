@@ -1,10 +1,12 @@
 return {
-  "craftzdog/solarized-osaka.nvim",
+  { "craftzdog/solarized-osaka.nvim" },
   lazy = true,
   priority = 1000,
-  opts = function()
-    return {
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "solarized-osaka",
       transparent = true,
-    }
-  end,
+    },
+  },
 }
