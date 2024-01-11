@@ -16,6 +16,8 @@ require("lazy").setup({
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
     { import = "lazyvim.plugins.extras.dap.core" },
+    { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "plugins" },
   },
   defaults = {
@@ -29,10 +31,6 @@ require("lazy").setup({
   },
   install = { colorscheme = { "solarized-osaka", "everforest", "tokyonight", "habamax" } },
   checker = { enabled = true }, -- automatically check for plugin update
-  {
-    { import = "lazyvim.plugins.extras.linting.eslint" },
-    { import = "lazyvim.plugins.extras.formatting.prettier" },
-  },
   performance = {
     rtp = {
       -- disable some rtp plugins
